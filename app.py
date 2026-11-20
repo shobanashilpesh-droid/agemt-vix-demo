@@ -3,7 +3,7 @@ import os
 
 import streamlit as st
 import pandas as pd
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from langfuse import get_client
 
 # -----------------------------------------
@@ -17,9 +17,9 @@ st.set_page_config(
 )
 
 # Load local environment variables
-load_dotenv()
+import os
 
-# Load Streamlit Cloud secrets before importing agents
+# Load Streamlit Clouimport osd secrets before importing agents
 try:
     for key in [
         "LANGFUSE_PUBLIC_KEY",
